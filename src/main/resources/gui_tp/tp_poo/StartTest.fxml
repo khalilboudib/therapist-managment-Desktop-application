@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_tp.tp_poo.StartEpreuve">
+    <children>
+        <VBox prefHeight="409.0" prefWidth="179.0" spacing="10" style="-fx-background-color: F9F9FD;" stylesheets="@menu-button.css">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <children>
+                <ImageView fx:id="profileImage" fitHeight="32.0" fitWidth="99.0">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image>
+                </ImageView>
+                <Button onAction="#GoHome" styleClass="menu-button" stylesheets="@menu-button.css" text="Home" />
+                <Button onAction="#GoPatient" styleClass="menu-button" text="Patients" />
+                <Button onAction="#GoRendezVous" styleClass="menu-button" text="Rendez-Vous" />
+                <Button onAction="#GoTest" styleClass="menu-button" text="Tests" />
+                <Button onAction="#GoAnamnese" styleClass="menu-button" text="Anamnèse" />
+                <Button onAction="#LogOut" styleClass="menu-button" text="Log Out" />
+            </children>
+        </VBox>
+        <Button layoutX="498.0" layoutY="350.0" mnemonicParsing="false" onAction="#nexttest" text="next" />
+      <ScrollPane layoutX="276.0" layoutY="105.0" prefHeight="200.0" prefWidth="200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="QCMBOX" layoutX="7.0" layoutY="7.0" prefHeight="180.0" prefWidth="179.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>

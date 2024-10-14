@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="768.0" maxWidth="1366.0" prefHeight="599.0" prefWidth="957.0" stylesheets="@table.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_tp.tp_poo.showInfoOrtho">
+   <left>
+      <VBox prefWidth="200" spacing="10" style="-fx-background-color: F9F9FD; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 10, 0.5, -10, 0);">
+         <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+         </padding>
+         <children>
+            <ImageView fx:id="profileImage1" fitHeight="51.0" fitWidth="153.0">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="57.0" prefWidth="160.0">
+               <children>
+                  <ImageView fx:id="profileImage" fitHeight="51.0" fitWidth="51.0">
+                     <image>
+                        <Image url="@profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="MAACHI">
+                     <font>
+                        <Font name="GothamPro-Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="CENTER" onAction="#GoHome" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text="  Home                 ">
+               <graphic>
+                  <ImageView fx:id="profileImage2" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#GoPatient" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Clients               ">
+               <graphic>
+                  <ImageView fx:id="profileImage21" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@client.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="GothamPro-Medium" size="12.0" />
+               </font>
+            </Button>
+            <Button onAction="#GoRendezVous" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Rendez-Vous      ">
+               <graphic>
+                  <ImageView fx:id="profileImage211" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@rendezvous.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#GoTest" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Tests                   ">
+               <graphic>
+                  <ImageView fx:id="profileImage212" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@tests.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#GoAnamnese" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Anamnèse          ">
+               <graphic>
+                  <ImageView fx:id="profileImage213" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@anamnese.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#LogOut" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Log Out        ">
+               <graphic>
+                  <ImageView fx:id="profileImage2131" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="65.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="641.0" prefWidth="757.0" spacing="20" style="-fx-background-color: EDEDF2;">
+         <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+         </padding>
+         <children>
+            <VBox prefHeight="96.0" prefWidth="718.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="102.0" prefWidth="717.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="488.0">
+                     <children>
+                        <Label fx:id="NomLabel" textFill="#333333">
+                           <font>
+                              <Font name="Gotham-Black" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PrenomLabel" textFill="#333333">
+                           <font>
+                              <Font name="GothamPro" size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@profile.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox maxWidth="718.0" prefHeight="249.0" prefWidth="717.0" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="348.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#ShowInfo" prefHeight="25.0" prefWidth="91.0" styleClass="button-addchoice" stylesheets="@styles.css" text="show Info">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="TypeLabel">
+                           <font>
+                              <Font name="GothamPro" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Addresse :   ">
+                           <font>
+                              <Font name="GothamPro" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AdresseLabel">
+                           <font>
+                              <Font name="GothamPro" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="email :    ">
+                           <font>
+                              <Font name="GothamPro" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="EmailLabel">
+                           <font>
+                              <Font name="GothamPro" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Numero de telephone :    :    ">
+                           <font>
+                              <Font name="GothamPro" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="TelLabel">
+                           <font>
+                              <Font name="GothamPro" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <HBox prefHeight="171.0" prefWidth="717.0" spacing="25.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

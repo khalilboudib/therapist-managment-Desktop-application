@@ -1,0 +1,84 @@
+/* General Styles */
+.root {
+    -fx-font-family: "Arial";
+}
+
+/* Styles for Buttons */
+.button {
+    -fx-background-color: #007BFF;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+/* Specific Styles for the Menu Buttons */
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+}
+
+.menu-button:hover {
+    -fx-background-color: #E0E0E0;
+}
+
+/* Table Styles */
+.table-view {
+    -fx-border-color: #e1e1e1;
+    -fx-border-width: 1;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-column-header {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #e1e1e1;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 5 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.table-row-cell {
+    -fx-border-color: #e1e1e1;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:filled:selected, .table-row-cell:filled:selected:hover {
+    -fx-background-color: #007BFF;
+    -fx-text-fill: white;
+}
+
+.table-cell {
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+.table-cell .label {
+    -fx-text-fill: #000;
+}
+
+/* Styles for Action Buttons inside the Table */
+.action-button {
+    -fx-background-color: #28a745; /* Green color */
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 5 10;
+    -fx-font-size: 12px;
+}
+
+.action-button:hover {
+    -fx-background-color: #218838;
+}
+
+.action-button.delete {
+    -fx-background-color: #dc3545; /* Red color */
+}
+
+.action-button.delete:hover {
+    -fx-background-color: #c82333;
+}

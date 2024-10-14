@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_tp.tp_poo.StartTrouble">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="207.0" layoutY="111.0" prefHeight="210.0" prefWidth="306.0" spacing="15.0" style="-fx-background-color: WHITE; -fx-background-radius: 20;">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+            </padding>
+            <children>
+                <Text fill="#162b46" strokeType="OUTSIDE" strokeWidth="0.0" text="Trouble" wrappingWidth="75.23685579630794">
+                    <font>
+                        <Font name="Gotham-Black" size="18.0" />
+                    </font>
+                </Text>
+            <VBox maxWidth="309.0" prefHeight="63.0" prefWidth="286.0" spacing="4.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du trouble">
+                     <font>
+                        <Font name="Gotham-Light" size="12.0" />
+                     </font>
+                  </Text>
+                      <TextField fx:id="NomTrouble" prefHeight="36.0" prefWidth="250.0" promptText="Nom Trouble" styleClass="styled-inputfield" stylesheets="@styles.css" />
+               </children>
+            </VBox>
+            <VBox maxWidth="309.0" prefHeight="63.0" prefWidth="286.0" spacing="4.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type du trouble">
+                     <font>
+                        <Font name="Gotham-Light" size="12.0" />
+                     </font>
+                  </Text>
+                      <ChoiceBox fx:id="TypeTrouble" prefHeight="36.0" prefWidth="284.0" styleClass="styled-choicebox" stylesheets="@styles.css" />
+               </children>
+            </VBox>
+            </children>
+        </VBox>
+          <Button layoutX="437.0" layoutY="334.0" mnemonicParsing="false" onAction="#AddTrouble" prefHeight="30.0" prefWidth="75.0" styleClass="button-addchoice" stylesheets="@styles.css" text="Ajouter" />
+    </children>
+</AnchorPane>

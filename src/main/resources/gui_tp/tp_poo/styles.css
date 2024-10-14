@@ -1,0 +1,317 @@
+/* styles.css */
+.button-28 {
+    -fx-background-color: transparent;
+    -fx-border-color: #0A6EC4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px; /* Added background radius */
+    -fx-box-sizing: border-box;
+    -fx-text-fill: #170F49;
+    -fx-cursor: hand;
+    -fx-font-family: "Gotham-Pro";
+    -fx-font-size: 10px; /* Adjusted font size */
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-padding: 5px 10px; /* Adjusted padding */
+    -fx-alignment: center;
+    -fx-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); /* Increased transition time to 500ms */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 0, 0, 0, 0);
+}
+
+.button-28:disabled {
+    -fx-opacity: 0.6;
+    -fx-cursor: default;
+}
+
+.button-28:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #0A6EC4;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px; /* Added background radius */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 8, 0, 0, 8);
+}
+
+.button-28:pressed {
+    -fx-effect: none;
+    -fx-translate-y: 0;
+}
+.button-28:selected {
+ -fx-background-color: #0A6EC4;
+    -fx-text-fill: #fff;
+
+}
+
+.button-save {
+    -fx-background-color: #38D291;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px; /* Added background radius */
+    -fx-box-sizing: border-box;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+    -fx-font-family: "Gotham-Pro";
+    -fx-font-size: 10px; /* Adjusted font size */
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-padding: 5px 10px; /* Adjusted padding */
+    -fx-alignment: center;
+    -fx-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); /* Increased transition time to 500ms */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 0, 0, 0, 0);
+}
+.button-save:hover {
+    -fx-background-color: #23B377;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px; /* Added background radius */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 8, 0, 0, 8);
+}
+
+.button-annuler {
+    -fx-background-color: transparent;
+    -fx-border-color: #414146;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px; /* Added background radius */
+    -fx-box-sizing: border-box;
+    -fx-text-fill: #414146;
+    -fx-cursor: hand;
+    -fx-font-family: "Gotham-Pro";
+    -fx-font-size: 10px; /* Adjusted font size */
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-padding: 5px 10px; /* Adjusted padding */
+    -fx-alignment: center;
+    -fx-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); /* Increased transition time to 500ms */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 0, 0, 0, 0);
+}
+.button-transparent {
+    -fx-background-color: transparent;
+    -fx-border-color: #0A6EC4;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px; /* Added background radius */
+    -fx-box-sizing: border-box;
+    -fx-text-fill: #0A6EC4;
+    -fx-cursor: hand;
+    -fx-font-family: "Gotham-Pro-Medium";
+    -fx-font-size: 12px; /* Adjusted font size */
+    -fx-font-weight: 600;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+    -fx-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); /* Increased transition time to 500ms */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 0, 0, 0, 0);
+}
+
+.button-addchoice {
+    -fx-background-color: #0A6EC4;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px; /* Added background radius */
+    -fx-box-sizing: border-box;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+    -fx-font-family: "Gotham-Pro";
+    -fx-font-size: 10px; /* Adjusted font size */
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-padding: 5px 10px; /* Adjusted padding */
+    -fx-alignment: center;
+    -fx-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); /* Increased transition time to 500ms */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 0, 0, 0, 0);
+}
+
+/* Style.css */
+/* Style.css */
+.styled-rectangle {
+    -fx-font-size: 10px;
+    -fx-border-radius: 6px;
+    -fx-line-height: 1.5;
+    -fx-padding: 5px 10px;
+    -fx-transition: -fx-box-shadow 100ms ease-in, -fx-border 100ms ease-in, -fx-background-color 100ms ease-in;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #333; /* Border color */
+    -fx-background-color: #fff; /* Background color */
+    -fx-font-family: "Gotham Pro";
+}
+
+.styled-rectangle:hover {
+    -fx-border-color: #ccc;
+}
+
+.styled-rectangle:focused {
+    -fx-border-color: #0A6EC4;
+    -fx-background-color: #fff;
+}
+
+.styled-inputfield {
+    -fx-font-size: 10px;
+    -fx-border-radius: 20px;
+    -fx-line-height: 1.5;
+    -fx-padding: 5px 10px;
+    -fx-transition: -fx-box-shadow 100ms ease-in, -fx-border 100ms ease-in, -fx-background-color 100ms ease-in;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #0A6EC4; /* Border color */
+    -fx-background-color: #fff; /* Background color */
+    -fx-font-family: "Gotham Pro";
+}
+
+
+.styled-inputfield:focused {
+    -fx-border-color: #162B46;
+}
+.styled-choicebox {
+    -fx-font-size: 10px;
+    -fx-border-radius: 20px;
+    -fx-padding: 5px 10px;
+    -fx-transition: -fx-box-shadow 100ms ease-in, -fx-border 100ms ease-in, -fx-background-color 100ms ease-in;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #0A6EC4; /* Border color */
+    -fx-background-color: #fff; /* Background color */
+    -fx-font-family: "Gotham Pro";
+}
+
+.styled-choicebox:focused {
+    -fx-border-color: #162B46;
+}
+
+/* Style.css */
+.list-view {
+    -fx-font-family: "Gotham Pro", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-radius: 20px; /* Added background radius */
+}
+
+.list-cell {
+    -fx-padding: 10px 20px;
+    -fx-background-color: #f5f5f5;
+    -fx-border-width: 0 0 1 0; /* Only bottom border */
+    -fx-border-color: #ddd;
+    -fx-cursor: hand;
+}
+
+.list-cell:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.list-view .empty {
+    -fx-text-fill: #888;
+    -fx-padding: 10px;
+}
+
+.list-view .selected {
+    -fx-background-color: #d0d0d0;
+}
+
+
+/* Remove all borders from the table */
+/* Remove all borders from the table */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #0A6EC4;
+    -fx-background-radius: 10px 10px 0 0;
+    -fx-border-radius: 10px 10px 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent; /* Make it transparent so the background color applies correctly */
+    -fx-border-color: transparent;
+    -fx-padding: 5px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white; /* Set the text color in the header to white for better contrast */
+    -fx-padding: 10px; /* Add padding to the text inside the header */
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+}
+.table-view .table-row-cell:selected {
+    -fx-background-color: #0A6EC4;
+}
+
+
+.styled-datepicker {
+    -fx-font-size: 10px;
+    -fx-border-radius: 20px;
+    -fx-padding: 5px 10px;
+    -fx-transition: -fx-box-shadow 100ms ease-in, -fx-border 100ms ease-in, -fx-background-color 100ms ease-in;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #0A6EC4; /* Border color */
+    -fx-background-color: #fff; /* Background color */
+    -fx-font-family: "Gotham Pro";
+}
+
+.styled-datepicker:focused {
+    -fx-border-color: #162B46;
+}
+
+/* Additional styles to handle DatePicker popup */
+.styled-datepicker .arrow {
+    -fx-background-color: transparent;
+}
+
+.styled-datepicker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.styled-datepicker .arrow-button .arrow {
+    -fx-background-color: transparent;
+}
+
+.styled-datepicker .date-picker-popup {
+    -fx-border-color: #0A6EC4;
+    -fx-background-color: #fff;
+}
+
+.styled-datepicker .date-picker-popup .calendar-pane {
+    -fx-background-color: #fff;
+}
+
+.styled-togglebutton {
+    -fx-font-size: 10px;
+    -fx-border-radius: 20px;
+    -fx-padding: 5px 10px;
+    -fx-transition: -fx-box-shadow 100ms ease-in, -fx-border 100ms ease-in, -fx-background-color 100ms ease-in;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #0A6EC4; /* Border color */
+    -fx-background-color: #fff; /* Background color */
+    -fx-font-family: "Gotham Pro";
+}
+
+.styled-togglebutton:focused {
+    -fx-border-color: #162B46;
+}
+
+.styled-togglebutton:selected {
+    -fx-background-color: #0A6EC4;
+    -fx-text-fill: #fff;
+}
+
+.styled-togglebutton:pressed {
+    -fx-background-color: #162B46;
+    -fx-text-fill: #fff;
+}
+
+.styled-buttonHome {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.styled-buttonHome:hover {
+    -fx-border-color: #0A6EC4;
+}
+
+/* Style for the Pagination control */
+/* Style for the Pagination control */

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_tp.tp_poo.CreeQuestionaire">
+    <children>
+      <VBox alignment="CENTER" layoutX="208.0" layoutY="110.0" prefHeight="259.0" prefWidth="303.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#162b46" strokeType="OUTSIDE" strokeWidth="0.0" text="Question libre" wrappingWidth="134.83689241740169">
+               <font>
+                  <Font name="Gotham-Black" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="QueLibreEnonce" prefHeight="33.0" prefWidth="233.0" promptText="enonce" styleClass="styled-inputfield" stylesheets="@styles.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="35.0" right="35.0" />
+               </VBox.margin>
+            </TextField>
+              <Button fx:id="add_button" mnemonicParsing="false" onAction="#AddQueLibre" prefHeight="31.0" prefWidth="136.0" styleClass="button-addchoice" stylesheets="@styles.css" text="AJOUTER" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

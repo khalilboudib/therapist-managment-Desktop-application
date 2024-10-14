@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_tp.tp_poo.CreeQcu">
+    <children>
+      <VBox alignment="TOP_CENTER" layoutX="314.0" layoutY="151.0" prefHeight="200.0" prefWidth="294.0" spacing="20.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+         <children>
+            <Text fill="#162b46" strokeType="OUTSIDE" strokeWidth="0.0" text="Choix QCM/QCU" textAlignment="CENTER" wrappingWidth="170.23677950236262">
+               <font>
+                  <Font name="Gotham-Black" size="20.0" />
+               </font>
+            </Text>
+              <TextField fx:id="choix" prefHeight="34.0" prefWidth="215.0" promptText="choix" styleClass="styled-inputfield" stylesheets="@styles.css" />
+              <Button fx:id="add_button" mnemonicParsing="false" onAction="#addChoixQcu" prefHeight="25.0" prefWidth="95.0" styleClass="button-save" stylesheets="@styles.css" text="SAUVGARDER" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="11.0" maxWidth="200.0" prefHeight="480.0" prefWidth="200.0" spacing="7.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="profileImage1" fitHeight="51.0" fitWidth="153.0">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="TOP_CENTER" prefHeight="57.0" prefWidth="160.0">
+               <children>
+                  <ImageView fx:id="profileImage" fitHeight="51.0" fitWidth="51.0">
+                     <image>
+                        <Image url="@profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="orthophonisteID" text="MAACHI">
+                     <font>
+                        <Font name="GothamPro-Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="CENTER" onAction="#GoHome" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text="  Home                 ">
+               <graphic>
+                  <ImageView fx:id="profileImage2" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#GoPatient" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Clients               ">
+               <graphic>
+                  <ImageView fx:id="profileImage21" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@client.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="GothamPro-Medium" size="12.0" />
+               </font>
+            </Button>
+            <Button onAction="#GoRendezVous" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Rendez-Vous      ">
+               <graphic>
+                  <ImageView fx:id="profileImage211" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@rendezvous.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#GoTest" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Tests                   ">
+               <graphic>
+                  <ImageView fx:id="profileImage212" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@tests.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#GoAnamnese" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Anamnèse          ">
+               <graphic>
+                  <ImageView fx:id="profileImage213" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@anamnese.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#LogOut" prefHeight="30.0" prefWidth="164.0" styleClass="button-transparent" stylesheets="@styles.css" text=" Log Out        ">
+               <graphic>
+                  <ImageView fx:id="profileImage2131" fitHeight="26.0" fitWidth="23.0" preserveRatio="true">
+                     <image>
+                        <Image url="@logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

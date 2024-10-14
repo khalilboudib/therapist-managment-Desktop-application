@@ -1,0 +1,12 @@
+.button {
+    -fx-background-color: #0A6EC4;
+    -fx-text-fill: white;
+    -fx-background-radius: 15; /* Rounded corners */
+    -fx-border-radius: 15;
+    -fx-padding: 10 20 10 20; /* Padding inside the button */
+    -fx-font-size: 14px; /* Font size */
+}
+
+.button:hover {
+    -fx-background-color: #3A8EE6; /* Lighter blue on hover */
+}

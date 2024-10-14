@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_tp.tp_poo.StartFiche">
+    <children>
+        <Button layoutX="246.0" layoutY="272.0" mnemonicParsing="false" onAction="#next" prefHeight="29.0" prefWidth="108.0" styleClass="button-addchoice" stylesheets="@styles.css" text="NEXT" />
+      <VBox alignment="TOP_CENTER" layoutX="147.0" layoutY="143.0" prefHeight="113.0" prefWidth="306.0" spacing="15.0" style="-fx-background-color: WHITE; -fx-background-radius: 20;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+         </padding>
+         <children>
+            <Text fill="#162b46" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de la fiche" wrappingWidth="152.03684358927669">
+               <font>
+                  <Font name="Gotham-Black" size="18.0" />
+               </font>
+            </Text>
+            <VBox fx:id="Nom" maxWidth="309.0" prefHeight="63.0" prefWidth="286.0" spacing="4.0">
+               <children>
+                    <TextField fx:id="NomFiche" prefHeight="35.0" prefWidth="246.0" styleClass="styled-inputfield" stylesheets="@styles.css" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

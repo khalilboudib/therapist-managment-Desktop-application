@@ -1,0 +1,32 @@
+.sidebar {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 20;
+}
+
+.sidebar-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-pref-width: 200;
+    -fx-padding: 10 20;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.new-appointment-button {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.start-now-button {
+    -fx-background-color: #ffc107;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
